@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #444;
+        }
+
+        /* Header Section */
+        header {
+            background-color:#ffcc23;
+            color: #333;
+            text-align: center;
+            padding: 0px;
+        }
+
+        /* Service Section */
+        .services {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 20px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .contact-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #f8ecea;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #0c0c0b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c82525;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">Portfolio.</a>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="service.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="bars-animation">
+        <div class="bar" style="--i: 6"></div>
+        <div class="bar" style="--i: 5"></div>
+        <div class="bar" style="--i: 4"></div>
+        <div class="bar" style="--i: 3"></div>
+        <div class="bar" style="--i: 2"></div>
+        <div class="bar" style="--i: 1"></div>
+      </div>
+       <header>
+        <h1>Contact Me</h1>
+        <p>I'm here to help with your digital needs!</p>
+    </header>
+
+    <section class="services">
+        <h2>My Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Website Development</h3>
+                <p>I build professional and responsive websites tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Portfolio Creation</h3>
+                <p>Showcase your work with a unique and engaging portfolio.</p>
+            </div>
+            <div class="service-item">
+                <h3>E-commerce Solutions</h3>
+                <p>Launch your online store with a complete e-commerce setup.</p>
+            </div>
+            <div class="service-item">
+                <h3>Resume Design</h3>
+                <p>Get a professionally designed resume to make an impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hooria Khan - All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.instagram.com/p/DCANxhOBMH_/?img_index=1" target="_blank" style="color: #5b9cc5;">Instagram</a> | <a href="https://github.com/HKMentor?tab=repositories" target="_blank" style="color: #5b9cc5;">GitHub</a></p>
+    </footer>
+</body>
+</html>

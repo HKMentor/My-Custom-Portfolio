@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0;
+      color: #333;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.4s;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 10px;
+    }
+
+    .navbar ul li.active a {
+      font-weight: bold;
+      color: #04ff00;
+    }
+
+    .navbar a:hover {
+      color: #04ff00;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      padding: 80px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-card {
+      width: 300px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      margin: 15px;
+      color: #333;
+    }
+
+    .project-description {
+      margin: 0 15px 15px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .project-links {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #04ff00;
+      color: #222;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #02cc00;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      padding: 10px;
+      min-width: 200px;
+    }
+
+    .footer-section h2,
+    .footer-section h3 {
+      color: #f39c12;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #f39c12;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f39c12;
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="service.html">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <!-- Example Project Card -->
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Kr1h9hB05tltcf5Fzd4rp7tmr8lnKSAsTmC_3kcQq_gJuLYwkkfL9t7F9bNenmCtotU&usqp=CAU" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title"> Logical Calculator</h3>
+        <p class="project-description">An intuitive tool for performing quick and accurate logical operations effortlessly.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor/Logical-Calculator_HK" target="_blank" class="btn">GitHub</a>
+          <a href="https://hk-logical-calculator.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <!-- Add more project cards as needed -->
+      <div class="project-card">
+        <img src="https://www.hubspot.com/hubfs/how-much-website-cost_0.webp" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title">Simple HTML Website</h3>
+        <p class="project-description">A simple and clean static HTML website, not yet responsive for mobile devices.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor/Chapter-8_HTML-TAGS" target="_blank" class="btn">GitHub</a>
+          <a href="https://hk-simple-html-website.vercel.app/index.html" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://illustoon.com/photo/5054.png" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title">Digital Clock</h3>
+        <p class="project-description">Stylish analog clock showcasing elegance and precision.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor/clock-by-HooriaKhan" target="_blank" class="btn">GitHub</a>
+          <a href="https://hk-analog-clock.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://www.pnclogos.com/wp-content/themes/pnc-logos/pnc-assets/images/services/Custom-Shopify-Website-Development-Services-img(1).png" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title">E-commerce Website</h3>
+        <p class="project-description">A fully responsive personal portfolio website.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor/hkdashdeals-simple-responsive_-webpage" target="_blank" class="btn">GitHub</a>
+          <a href="https://hkdashdeals-simple-resposivewebpages.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPsg2QmMhD9a7dUnlMZyqf_FzaKtlCRLHTr7C9B0G65ylUa2CAvTzWZjnx4dEpfFrFC8&usqp=CAU" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title">Resume Builder</h3>
+        <p class="project-description">A dynamic resume builder that allows users to create and customize professional resumes effortlessly.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor/Dynamic-Resume-by-hk" target="_blank" class="btn">GitHub</a>
+          <a href="https://hk-dynamic-resume.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="./section/nextjsssssssssssss.png" alt="Project Screenshot" class="project-image">
+        <h3 class="project-title"> Next-js Portfolio </h3>
+        <p class="project-description">A fully responsive personal portfolio website.</p>
+        <div class="project-links">
+          <a href="https://github.com/HKMentor?tab=repositories" target="_blank" class="btn">GitHub</a>
+          <a href="https://my-advance-portfolio-llxpes9wu-hooriakhans-projects.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>Hooria Khan</h2>
+        <p>Frontend Developer | Freelancer | E-commerce Expert</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="service.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/hooria-fatima-54753927b/"><i class="bx bxl-linkedin-square"></i></a>
+          <a href="https://www.youtube.com/@Hooria_CodeHub12"><i class="bx bxl-youtube"></i></a>
+          <a href=" https://github.com/HKMentor?tab=repositories   "><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/hooria_codehub/"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Hooria Khan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

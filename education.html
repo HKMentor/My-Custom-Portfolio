@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio-Education</title>
+
+    <style>
+ .navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    background:#333 ; 
+    color: #fff; 
+    padding: 15px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 1000;
+ }
+  .navbar a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    transition: color 0.4s; 
+  }
+  
+  .navbar ul {
+    list-style: none; 
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px; 
+  }
+  
+  /* Active link style */
+  .navbar ul li.active a {
+    font-weight: bold; 
+    color: #ff4400; 
+  }
+  
+
+
+      .education {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.education h2 {
+  font-size: 40px; 
+    margin-bottom: 20px; 
+    color: #333; 
+    text-transform: uppercase; 
+  
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; 
+    text-align: center;
+}
+
+
+.education-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.education-item p,
+.education-item ul {
+  font-size: 1rem;
+  color: #666;
+}
+
+.education-item ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.education-item ul li {
+  margin-bottom: 5px;
+}
+
+strong {
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .education-details {
+    padding: 20px 15px;
+  }
+
+  .education-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .education-item p,
+  .education-item ul {
+    font-size: 0.9rem;
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #f39c12;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  margin-top: 0px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio.</a>
+    <ul>
+      <li ><a href="index.html">Home</a></li>
+      <li><a href="service.html">Project</a></li>
+      <li class="active"><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+    <div>
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <div class="education-details">
+              <div class="education-item">
+                <h3>Diploma in Information Technology (Web Development)</h3>
+                <p><strong>Institution:</strong> [Aptech]</p>
+                <p><strong>Completion Date:</strong> [01, 2022]</p>
+                <p><strong>Key Areas of Study:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, and Responsive Web Design.</p>
+              </div>
+          
+              <div class="education-item">
+                <h3>Intermediate in Commerce (I.Com)</h3>
+                <p><strong>Institution:</strong> [Gov.Girls College]</p>
+                <p><strong>Completion Date:</strong> [05, 2024]</p>
+                <p><strong>Key Skills Developed:</strong> Accounting principles, business studies, and communication skills.</p>
+              </div>
+          
+              <div class="education-item">
+                <h3>Certifications</h3>
+                <ul>
+                  <li>E-commerce in Shopify , Daraz , Etsy , Amazon – JDC IT City, [2023]</li>
+                  <li>TypeScript Fundamentals – Udemy, [2024]</li>
+                  <li>Freelancing Essentials – [Fiver], [2024]</li>
+                  <li>SEO Expert –  LU Training ,[2024] </li>
+                  <li>Word Press Expert –  LU Training ,[2024]</li>
+                </ul>
+              </div>
+          
+              <div class="education-item">
+                <h3>Current Studies</h3>
+                <p>GIAIC TypeScript Certification (Ongoing)</p>
+                <p>Freelancing Course (Ongoing)</p>
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+                <h2>Hooria Khan</h2>
+                <p>Frontend Developer | Freelancer | E-commerce Expert</p>
+              </div>
+          <hr>
+              <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="service.html">Projects</a></li>
+                  <li><a href="education.html">Education</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+          <hr>
+              <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/hooria-fatima-54753927b/"><i class="bx bxl-linkedin-square"></i></a>
+                  <a href="https://youtube.com/@hooria_codehub12?si=6h_M-k3e0NNxjzP1"><i class="bx bxl-youtube"></i></a>
+                  <a href="https://github.com/HKMentor?tab=repositories"><i class="bx bxl-github"></i></a>
+                  <a href="https://www.instagram.com/hooria_codehub/profilecard/?igsh=ZWhvMmVucm5ueHBl"><i class="bx bxl-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="footer-bottom">
+              <p>© 2024 Hooria Khan. All rights reserved.</p>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>
